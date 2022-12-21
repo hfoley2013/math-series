@@ -8,7 +8,7 @@ def fibonacci(n):
 
 
 def lucas(n):
-    prev, curr = 2, 1
+    a, b = 2, 1
     for _ in range(n):
-        prev, curr = curr, prev+curr
-    return prev
+        a, b = b, a + b
+    return a
